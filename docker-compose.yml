@@ -1,0 +1,16 @@
+services:
+  uvicorn:
+    build: . 
+    image: francoislbrn/docker_streamlit:uvicorn
+    working_dir: /app
+    command: poetry run uvicorn api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+
+  streamlit:
+    build: .
+    image: francoislbrn/docker_streamlit:streamlit
+    working_dir: /app
+    command: poetry run streamlit run streamlit_app.py
+    ports:
+      - "8501:8501"

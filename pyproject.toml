@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "docker-streamlit"
+version = "0.1.0"
+description = "final project for Tooling for DS"
+authors = ["FrancoisLbrn <francois.lebrun3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+pandas = "^2.2.1"
+scikit-learn = "^1.4.1.post1"
+streamlit = "^1.38.0"
+pandera = "^0.20.4"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+seaborn = "^0.13.2"
+matplotlib = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
